@@ -1,0 +1,83 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container1 {
+    height: 530px;
+    width: 26%;
+    margin-top: 5%;
+    margin-left: 36%;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.upper-section {
+    height: 35%;
+    background-color: black;
+    border-bottom: 1px solid rgb(59, 9, 9);
+}
+
+.upper-section>input {
+    float: right;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    height: 40px;
+    text-align: end;
+    width: 100%;
+    font-size: 25px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Poppins' !important;
+}
+
+.upper-section>p {
+    color: white;
+    font-size: 22px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-family: 'Poppins' !important;
+}
+
+
+.lower-section {
+    height: 65%;
+    background-color: black;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    margin-top: 15px;
+}
+
+
+.row1>button,
+.row2>button,
+.row3>button,
+.row4>button,
+.row5>button {
+    font-size: 21px;
+    width: 50px;
+    height: 49px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    color: red;
+    background: #2c2020;
+    margin-left: 29px;
+    cursor: pointer;
+}
+
+svg {
+    color: yellow;
+    height: 18px;
+    width: 18px;;
+}
