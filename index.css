@@ -1,12 +1,22 @@
 body {
     padding: 0;
     margin: 0;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+#head {
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 26px;
+    color: white;
+
 }
 
 .container1 {
-    height: 530px;
+    height: 500px;
     width: 26%;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 36%;
     background-color: black;
     overflow: hidden;
@@ -14,9 +24,10 @@ body {
 }
 
 .upper-section {
-    height: 35%;
+    height: 30%;
     background-color: black;
     border-bottom: 1px solid rgb(59, 9, 9);
+    position: relative;
 }
 
 .upper-section>input {
@@ -38,15 +49,22 @@ body {
 .upper-section>p {
     color: white;
     font-size: 22px;
+    font-weight: 600;
     float: right;
     margin-top: 15px;
     margin-right: 10px;
     font-family: 'Poppins' !important;
 }
 
+.upper-section > i {
+    font-size: 22px;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
 
 .lower-section {
-    height: 65%;
+    height: 60%;
     background-color: black;
 }
 
@@ -58,6 +76,16 @@ body {
     margin-top: 15px;
 }
 
+#number {
+    color: white;
+}
+
+#equal {
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+    background: green;
+}
 
 .row1>button,
 .row2>button,
@@ -74,9 +102,29 @@ body {
     background: #2c2020;
     margin-left: 29px;
     cursor: pointer;
+    font-family: "poppins";
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transition: 0.2s all;
 }
 
-svg {
+button:active {
+    transform: scale(0.90);
+}
+
+#clear > i {
+    color: red;
+}
+
+#equal > i {
+    color: white;
+    font-size: 22px;
+}
+
+#delete > i {
+    font-size: 20px;
+}
+
+i {
     color: yellow;
 
 }
