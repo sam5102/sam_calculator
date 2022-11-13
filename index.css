@@ -1,7 +1,15 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    transition: 0.5s;
+    background: #121212 !important;
+}
+
+/*for Light mode*/
+body.light-mode {
+    /* background-image: none; */
+    background-color: #f0f5ff !important;
 }
 
 #head {
@@ -10,7 +18,10 @@ body {
     text-align: center;
     margin-top: 26px;
     color: white;
+}
 
+#head.light-mode {
+    color: #121212;
 }
 
 .container1 {
@@ -21,6 +32,13 @@ body {
     background-color: black;
     overflow: hidden;
     border-radius: 15px;
+    transition: 0.5s;
+}
+
+/*for Light mode*/
+.container1.light-mode {
+    background-color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
 }
 
 .upper-section {
@@ -28,6 +46,12 @@ body {
     background-color: black;
     border-bottom: 1px solid rgb(59, 9, 9);
     position: relative;
+    transition: 0.5s;
+}
+
+.upper-section.light-mode {
+    background-color: white;
+    border-bottom: 1px solid #e3e7f0;
 }
 
 .upper-section>input {
@@ -46,6 +70,10 @@ body {
     font-family: 'Poppins' !important;
 }
 
+.upper-section > input.light-mode {
+    color: black;
+}
+
 .upper-section>p {
     color: white;
     font-size: 22px;
@@ -56,16 +84,47 @@ body {
     font-family: 'Poppins' !important;
 }
 
-.upper-section > i {
+.upper-section > p.light-mode {
+    color: black;
+}
+
+#sun, #moon {
     font-size: 22px;
     position: absolute;
     top: 80%;
     left: 5%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#sun {
+    display: block;
+    transition: 0.6s;
+    color: #7bddb4;
+}
+
+#moon {
+    display: none;
+    transition: 0.5s;
+}
+
+#sun.light-mode {
+    display: none;
+}
+
+#moon.light-mode {
+    display: block;
+    color: #34252ef5;
 }
 
 .lower-section {
     height: 60%;
     background-color: black;
+    transition: 0.5s;
+}
+
+.lower-section.light-mode {
+    background-color: white;
 }
 
 .row1,
@@ -81,10 +140,16 @@ body {
 }
 
 #equal {
-    font-weight: 600;
-    font-size: 21px;
-    color: white;
     background: green;
+}
+
+#equal.light-mode {
+    background: #f0f5ff;
+}
+
+#replay > i {
+    color: green;
+    transform: rotate(40deg);
 }
 
 .row1>button,
@@ -118,6 +183,10 @@ button:active {
 #equal > i {
     color: white;
     font-size: 22px;
+}
+
+#equal.light-mode > i {
+    color: black;
 }
 
 #delete > i {
